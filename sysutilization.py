@@ -49,7 +49,7 @@ def cpuusagecalc():
 def discusage():
 
     #Capture discusage info
-    cmd = "df -kh | awk '{print $1,$2,$3,$5}'|head -n 7"
+    cmd = "df /"
     discusage = subprocess.getoutput((cmd))
 
     print("---DISC USAGE---")
